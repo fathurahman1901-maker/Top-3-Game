@@ -1,32 +1,35 @@
 /* ── RESET ─────────────────────────────────────────────── */
-*, *::before, *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Plus Jakarta Sans", "Segoe UI", Roboto, sans-serif;
+* {
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
 }
 
-/* ── DESIGN TOKENS (mirrors styleHome.css) ─────────────── */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
-    --purple-main:  #a855f7;
-    --purple-light: #c084fc;
-    --purple-dim:   #7e22ce;
-    --bg-dark:      #0d0d12;
-    --bg-nav:       rgba(10, 10, 18, 0.92);
-    --bg-card:      #1a1a1f;
-    --bg-card2:     #1e1e22;
-    --text-white:   #f0f0f8;
-    --text-muted:   #94a3b8;
-    --text-dim:     #b0b0c8;
-    --border:       rgba(255, 255, 255, 0.07);
-    --border-purple: rgba(168, 85, 247, 0.2);
-    --gold:         #f59e0b;
+  --purple-main: #a855f7;
+  --purple-light: #c084fc;
+  --purple-dim: #7e22ce;
+  --bg-dark: #0d0d12;
+  --bg-nav: rgba(10, 10, 18, 0.92);
+  --text-white: #f0f0f8;
+  --text-muted: #b0b0c8;
+  --border-subtle: rgba(168, 85, 247, 0.2);
 }
 
-html, body {
-    background-color: var(--bg-dark);
-    color: var(--text-white);
-    overflow-x: hidden;
+html,
+body {
+  height: 100%;
+  font-family: "Inter", sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-white);
+  overflow-x: hidden;
 }
 
 /* ── NAVBAR (copy of Home) ──────────────────────────────── */
@@ -46,7 +49,7 @@ html, body {
 }
 
 .navbar .logo h3 {
-    font-weight: 800;
+    font-weight: bold;
     font-size: 1.3rem;
     letter-spacing: 0.04em;
     background: linear-gradient(90deg, #c084fc, #a855f7);
@@ -128,6 +131,11 @@ html, body {
     width: 100%;
 }
 .search-bar input::placeholder { color: var(--text-dim); }
+
+::-webkit-scrollbar {
+  position: relative;
+  z-index: 200;
+}
 
 /* ── MAIN WRAPPER ───────────────────────────────────────── */
 .trending-main {
