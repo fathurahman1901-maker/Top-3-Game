@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- End Font -->
+
+    <!-- Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- End Icon -->
+
+    <link rel="stylesheet" href="styleHome.css" />
+    <title>Home</title>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <nav class="navbar" id="navbar">
+            <div class="logo">
+                <h3>TOP 3 GAME HUB</h3>
+            </div>
+            <ul id="navLinks">
+                <li><a href="Home.html" class="active">Home</a></li>
+                <li><a href="Trending.html">Trending</a></li>
+                <li><a href="#genres">Genres</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+
+            <div class="nav-right">
+                 <button class="theme-toggle" aria-label="Toggle theme">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none"stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">  
+                        <circle cx="12" cy="12" r="5"/>
+                        <line x1="12" y1="1" x2="12" y2="3"/>
+                        <line x1="12" y1="21" x2="12" y2="23"/>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                        <line x1="1" y1="12" x2="3" y2="12"/>
+                        <line x1="21" y1="12" x2="23" y2="12"/>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/> 
+                    </svg>
+                    </button>
+
+            <div class="search-bar">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"/>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                    </svg>
+                    <input type="text" placeholder="Search Games...">
+                </div>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home">
+
+        <div class="hero-bg"></div>
+        <div class="city-silhouette"></div>
+        <div class="hero-vignette"></div>
+        
+        <div class="home-content-wrap">
+            <div class="live-badge">
+                <span class="dot"></span>
+                Live Rankings
+            </div>
+
+        <h1 class="home-title">
+                Top 3 <span class="highlight">Best Games</span><br>
+                by Genre
+            </h1>
+
+        <p class="home-desc">
+                Temukan game terbaik di setiap genre dengan ulasan mendalam dan rating terbaru.
+            </p>
+
+        <div class="home-buttons">
+                <button class="btn-explore">Explore Games</button>
+                <button class="btn-leaderboard">View Leaderboard</button>
+            </div>
+    </section>
+
+    <section class="genre"> 
+         <section class="genre-section">
+    <div class="genre-section-header">
+      <h2>Browse by <span>Genre</span></h2>
+      <div class="genre-header-line"></div>
+    </div>
+
+        <div class="genre-container">
+
+            <div class="genre-card">
+                <i class="fa-solid fa-gun genre-icon"></i>
+                <h3>Action</h3>
+                <p>View Games →</p>
+            </div>
+
+            <div class="genre-card">
+                <i class="fa-regular fa-map genre-icon"></i>
+                <h3>Adventure</h3>
+                <p>View Games →</p>
+            </div>
+
+            <div class="genre-card">
+                <i class="fa-solid fa-shield genre-icon"></i>
+                <h3>RPG</h3>
+                <p>View Games →</p>
+            </div>
+
+            <div class="genre-card">
+                <i class="fa-solid fa-crosshairs genre-icon"></i>
+                <h3>FPS</h3>
+                <p>View Games →</p>
+            </div>
+
+            <div class="genre-card">
+                <i class="fa-solid fa-flag-checkered genre-icon"></i>
+                <h3>Racing</h3>
+                <p>View Games →</p>
+            </div>
+
+            <div class="genre-card">
+                <i class="fa-regular fa-chess-knight genre-icon"></i>
+                <h3>Strategy</h3>
+                <p>View Games →</p>
+            </div>
+
+            <div class="genre-card">
+                <i class="fa-regular fa-futbol genre-icon"></i>
+                <h3>Sports</h3>
+                <p>View Games →</p>
+            </div>
+
+            <div class="genre-card">
+                <i class="fa-solid fa-ghost genre-icon"></i>
+                <h3>Horror</h3>
+                <p>View Games →</p>
+            </div>
+
+        </div>
+ 
+    </section>
+
+    <section class="featured-games">
+        <div class="featured-header">
+        <div class="header-text">
+            <h2>Editor's Choice: <span>Featured Games</span></h2>
+            <p>The elite selection of this month's most played games</p>
+        </div>
+        <p class="see-all">SEE ALL TRENDING <span class="arrow">&gt;</span></p>
+    </div>
+
+        <!-- Card #1: Valorant -->
+    <div class="game-card">
+        <div class="game-card-image-wrapper">
+            <img src="VALO1.jpg" alt="Valorant">
+            <span class="rank-badge">#1</span>
+        </div>
+        <div class="game-card-content">
+            <h3>Valorant</h3>
+            <p>Valorant is a free-to-play first-person shooter developed and published by Riot Games.
+            The game was officially released on June 2, 2020, after a closed beta period that began in April 2020.
+            Valorant combines elements of tactical shooters and hero-based games, offering a unique blend of gameplay
+            that has garnered a large player base and competitive esports scene.</p>
+            <div class="game-platforms">
+                <i class="fa-solid fa-computer"></i>
+                <i class="fa-solid fa-gamepad"></i>
+            </div>
+            <div class="game-card-buttons">
+                <button class="detail">Detail</button>
+                <button class="wishlist">Wishlist</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card #2: Dota 2 -->
+    <div class="game-card">
+        <div class="game-card-image-wrapper">
+            <img src="DOTA.jpg" alt="Dota 2">
+            <span class="rank-badge">#2</span>
+        </div>
+        <div class="game-card-content">
+            <h3>Dota 2</h3>
+            <p>Dota 2 is a multiplayer online battle arena (MOBA) game developed and published by Valve Corporation.
+            It is the sequel to Defense of the Ancients (DotA), which was a community-created mod for Blizzard
+            Entertainment's Warcraft III: Reign of Chaos. Dota 2 was officially released on July 9, 2013, and has
+            since become one of the most popular esports titles in the world.</p>
+            <div class="game-platforms">
+                <i class="fa-solid fa-computer"></i>
+            </div>
+            <div class="game-card-buttons">
+                <button class="detail">Detail</button>
+                <button class="wishlist">Wishlist</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card #3: Genshin Impact — now a proper sibling with full content -->
+    <div class="game-card">
+        <div class="game-card-image-wrapper">
+            <img src="GI.jpg" alt="Genshin Impact">
+            <span class="rank-badge">#3</span>
+        </div>
+        <div class="game-card-content">
+            <h3>Genshin Impact</h3>
+            <p>Genshin Impact is a free-to-play action role-playing game developed and published by HoYoverse.
+            Released globally in September 2020, it features an expansive open world, elemental combat, and
+            regular story updates. It has become one of the highest-grossing games worldwide and boasts a
+            thriving community and competitive gacha system.</p>
+            <div class="game-platforms">
+                <i class="fa-solid fa-computer"></i>
+                <i class="fa-solid fa-gamepad"></i>
+                <i class="fa-solid fa-mobile-screen"></i>
+            </div>
+            <div class="game-card-buttons">
+                <button class="detail">Detail</button>
+                <button class="wishlist">Wishlist</button>
+            </div>
+        </div>
+    </div>
+    </section>
+    
+
+    
+
+</body>
+
+<footer>
+    <div class="footer-grid">
+        <div class="footer-brand">
+            <h2 class="footer-logo">Top 3 Game Hub</h2>
+            <p class="footer-desc">
+                The definitive source for discovering elite gaming titles across all universes.
+                Engineered for competitive precision.
+            </p>
+            <div class="footer-social">
+                <button class="social-btn" aria-label="Website"><i class="fa-solid fa-globe"></i></button>
+                <button class="social-btn" aria-label="Discord"><i class="fa-brands fa-discord"></i></button>
+                <button class="social-btn" aria-label="Email"><i class="fa-regular fa-envelope"></i></button>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <p class="footer-col-title">Resources</p>
+            <ul>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy Protocol</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <p class="footer-col-title">Ecosystem</p>
+            <ul>
+                <li><a href="#">Partners</a></li>
+                <li><a href="#">Developers</a></li>
+                <li><a href="#">API Access</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <p class="footer-col-title">Team Protocol</p>
+            <div class="footer-ops">
+                <p class="ops-label">Operatives:</p>
+                <p class="ops-name">Core Engine Squad 7</p>
+                <div class="ops-tags">
+                    <span>Alpha</span>
+                    <span class="sep">//</span>
+                    <span>Beta</span>
+                    <span class="sep">//</span>
+                    <span>Gamma</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Top 3 Game Hub. Engineered for Elite Gaming.</p>
+    </div>
+</footer>
+
+<script>
+    // Time filter tabs
+    document.querySelectorAll('.time-tab').forEach(tab => {
+        tab.addEventListener('click', () => {
+            document.querySelectorAll('.time-tab').forEach(t => t.classList.remove('active'));
+            tab.classList.add('active');
+        });
+    });
+</script>
+</html>
