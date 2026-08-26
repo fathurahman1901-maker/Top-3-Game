@@ -22,10 +22,10 @@
       referrerpolicy="no-referrer"
     />
     <!-- Icon -->
-    <link rel="icon" type="image/jpg" href="/Image/ICON.jpg" />
+    <link rel="icon" type="image/jpg" href="../Image/logo/logo-inmed.jpg" />
     <!-- End Icon -->
 
-    <link rel="stylesheet" href="styleTrending.css" />
+    <link rel="stylesheet" href="css/styleTrending.css" />
     <title>Trending</title>
   </head>
   <body>
@@ -37,7 +37,8 @@
         <ul id="navLinks">
           <li><a href="Home.html">Home</a></li>
           <li><a href="Trending.html" class="active">Trending</a></li>
-          <li><a href="#genres">Genres</a></li>
+          <li><a href="list.html">List</a></li>
+          <li><a href="genre.html">Genres</a></li>
           <li><a href="About.html">About</a></li>
         </ul>
         <div class="nav-right">
@@ -87,7 +88,7 @@
           </div>
         </div>
       </nav>
-      <script src="searchbar.js"></script>
+      <script src="js/searchbar.js"></script>
     </header>
 
     <main class="trending-main">
@@ -107,216 +108,25 @@
         </div>
       </div>
 
-      <!-- ── HERO CARDS: Rank 1 & 2 ──────────────────────── -->
-      <div class="hero-grid">
-        <!-- Rank 1 -->
-        <div class="hero-card">
-          <div class="hero-thumb">
-            <img src="/Image/How To Fish.webp" alt="How To Fish" />
-            <div class="hero-overlay"></div>
-          </div>
-          <div class="hero-rank rank-1">01</div>
-          <div class="hero-badges">
-            <span class="badge badge-genre">Action Co-op</span>
-            <span class="badge badge-live">
-              <span class="badge-dot"></span>Live Event
-            </span>
-          </div>
-          <div class="hero-info">
-            <div class="hero-meta">
-              <h2 class="hero-title">How To Fish</h2>
-              <div class="hero-stats">
-                <span class="star-rating">
-                  <i class="fa-solid fa-star"></i> 4.9
-                </span>
-                <span class="stat-icon"
-                  ><i class="fa-regular fa-comment"></i
-                ></span>
-                <span class="stat-icon"
-                  ><i class="fa-solid fa-gamepad"></i
-                ></span>
-              </div>
-            </div>
-            <button class="btn-play">Play Now</button>
-          </div>
-        </div>
+      <div class="hero-grid" id="hero-grid"></div>
 
-        <!-- Rank 2 -->
-        <div class="hero-card">
-          <div class="hero-thumb">
-            <img src="/Image/CS2.jpg" alt="Counter-Strike 2" />
-            <div class="hero-overlay"></div>
-          </div>
-          <div class="hero-rank rank-2">02</div>
-          <div class="hero-badges">
-            <span class="badge badge-genre">Action FPS</span>
-            <span class="badge badge-live">
-              <span class="badge-dot"></span>Live Event
-            </span>
-          </div>
-          <div class="hero-info">
-            <div class="hero-meta">
-              <h2 class="hero-title">Counter-Strike 2</h2>
-              <div class="hero-stats">
-                <span class="star-rating">
-                  <i class="fa-solid fa-star"></i> 4.9
-                </span>
-                <span class="stat-icon"
-                  ><i class="fa-regular fa-comment"></i
-                ></span>
-                <span class="stat-icon"
-                  ><i class="fa-solid fa-gamepad"></i
-                ></span>
-              </div>
-            </div>
-            <button class="btn-play">Play Now</button>
-          </div>
-        </div>
-      </div>
+      <div class="small-grid" id="small-grid"></div>
 
-      <!-- ── SMALL CARDS: Rank 3–6 ────────────────────────── -->
-      <div class="small-grid">
-        <!-- Rank 3 -->
-        <div class="small-card">
-          <div class="small-thumb">
-            <img src="/Image/DOTA.jpg" alt="Dota 2" />
-            <span class="small-rank">03</span>
-            <span class="small-rating"
-              ><i class="fa-solid fa-star"></i> 4.7</span
-            >
-          </div>
-          <div class="small-body">
-            <h3 class="small-title">Dota 2</h3>
-            <div class="small-footer">
-              <div class="small-icons">
-                <i class="fa-regular fa-comment"></i>
-                <span class="small-count">63</span>
-              </div>
-              <button class="btn-view">View Hub</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Rank 4 -->
-        <div class="small-card">
-          <div class="small-thumb">
-            <img src="/Image/APEX.jpg" alt="Apex Legends" />
-            <span class="small-rank">04</span>
-            <span class="small-rating"
-              ><i class="fa-solid fa-star"></i> 4.7</span
-            >
-          </div>
-          <div class="small-body">
-            <h3 class="small-title">Apex Legends</h3>
-            <div class="small-footer">
-              <div class="small-icons">
-                <i class="fa-regular fa-comment"></i>
-                <span class="small-count">62</span>
-              </div>
-              <button class="btn-view">View Hub</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Rank 5 -->
-        <div class="small-card">
-          <div class="small-thumb">
-            <img
-              src="/Image/Star wars zero company.jpg"
-              alt="Star Wars Zero Company"
-            />
-            <span class="small-rank">05</span>
-            <span class="small-rating"
-              ><i class="fa-solid fa-star"></i> 4.8</span
-            >
-          </div>
-          <div class="small-body">
-            <h3 class="small-title">Star Wars Zero Company</h3>
-            <div class="small-footer">
-              <div class="small-icons">
-                <i class="fa-solid fa-gamepad"></i>
-              </div>
-              <button class="btn-view">View Hub</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Rank 6 -->
-        <div class="small-card">
-          <div class="small-thumb">
-            <img src="/Image/Mortal shell 2.jpeg" alt="Mortal Shell 2" />
-            <span class="small-rank">06</span>
-            <span class="small-rating"
-              ><i class="fa-solid fa-star"></i> 4.8</span
-            >
-          </div>
-          <div class="small-body">
-            <h3 class="small-title">Mortal Shell 2</h3>
-            <div class="small-footer">
-              <div class="small-icons">
-                <i class="fa-solid fa-gamepad"></i>
-              </div>
-              <button class="btn-view">View Hub</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ── CHALLENGERS ───────────────────────────────────── -->
       <section class="challengers-section">
         <div class="section-header-line">
           <h2 class="section-heading">Challengers</h2>
           <div class="header-line"></div>
         </div>
 
-        <div class="challenger-list">
-          <div class="challenger-row">
-            <span class="ch-num">01</span>
-            <img
-              class="ch-thumb"
-              src="/Image/CODMW4.jpeg"
-              alt="Call of Duty: Modern Warfare 4"
-            />
-            <div class="ch-info">
-              <p class="ch-name">Call of Duty: Modern Warfare 4</p>
-              <p class="ch-sub">Action FPS · <span>32.4k Players Now</span></p>
-            </div>
-            <div class="ch-right">
-              <span class="ch-rating"
-                ><i class="fa-solid fa-star"></i> 4.5</span
-              >
-              <i class="fa-regular fa-comment ch-icon"></i>
-            </div>
-          </div>
-
-          <div class="challenger-row">
-            <span class="ch-num">06</span>
-            <img
-              class="ch-thumb"
-              src="/Image/Black Myth Wukong.jpeg"
-              alt="Black Myth Wukong"
-            />
-            <div class="ch-info">
-              <p class="ch-name">Black Myth Wukong</p>
-              <p class="ch-sub">Action RPG · <span>0.1k Players Now</span></p>
-            </div>
-            <div class="ch-right">
-              <span class="ch-rating"
-                ><i class="fa-solid fa-star"></i> 4.3</span
-              >
-              <i class="fa-regular fa-comment ch-icon"></i>
-            </div>
-          </div>
-        </div>
+        <div class="challenger-list" id="challenger-list"></div>
       </section>
 
-      <!-- ── SEE ALL ────────────────────────────────────────── -->
       <div class="see-all-wrap">
         <p class="see-all-desc">
           Discover hundreds more titles climbing the charts. Our algorithm
           updates every hour to reflect the most engaged communities.
         </p>
-        <button class="btn-see-all">SEE ALL TRENDING &nbsp;→</button>
+        <button class="btn-see-all" id="btn-see-all" type="button">See All Challengers →</button>
       </div>
 
       <!-- ── NEWSLETTER ─────────────────────────────────────── -->
@@ -337,7 +147,7 @@
           </div>
         </div>
         <div class="nl-visual">
-          <img src="/Image/ICON.jpg" alt="Gaming setup" />
+          <img src="../Image/logo/logo-inmed.jpg" alt="Gaming setup" />
         </div>
       </section>
     </main>
@@ -403,16 +213,241 @@
       </div>
     </footer>
 
+    <script src="js/ListGameAll.js"></script>
     <script>
-      // Time filter tabs
+      const timeKeyMap = {
+        daily: "peakPlayNow",
+        weekly: "peakPlayWeek",
+        monthly: "peakPlayers"
+      };
+
+      const heroGrid = document.getElementById("hero-grid");
+      const smallGrid = document.getElementById("small-grid");
+      const challengerList = document.getElementById("challenger-list");
+      const toggleBtn = document.getElementById("btn-see-all");
+
+      let showAllChallengers = false;
+
+      function parseNumber(value) {
+        const raw = String(value ?? "0").replace(/[^0-9.]/g, "").replace(/\.(?=\d{3}(?:\.|$))/g, "");
+        return Number(raw || 0);
+      }
+
+      function getSortedGames(mode) {
+        const catalog = Array.isArray(window.ListGameAll) ? window.ListGameAll : [];
+        const key = timeKeyMap[mode] || "peakPlayNow";
+
+        return [...catalog].sort((a, b) => parseNumber(b[key]) - parseNumber(a[key]));
+      }
+
+      function resolveDetailUrl(game) {
+        const slug = game && (game.slug || game.name);
+        return `Games/detail.html?game=${encodeURIComponent(String(slug).trim())}`;
+      }
+
+      function buildButton(label, game, className) {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = className;
+        button.textContent = label;
+        button.addEventListener("click", () => {
+          window.location.href = resolveDetailUrl(game);
+        });
+        return button;
+      }
+
+      function renderHeroCards(games) {
+        if (!heroGrid) return;
+
+        heroGrid.innerHTML = games
+          .map((game, index) => {
+            const cover = window.resolveGameCoverPath ? window.resolveGameCoverPath(game.cover) : game.cover;
+            const rank = String(index + 1).padStart(2, "0");
+            const rankClass = index === 0 ? "rank-1" : "rank-2";
+
+            return `
+              <div class="hero-card" data-slug="${game.slug || game.name}">
+                <div class="hero-thumb">
+                  <img src="${cover}" alt="${game.name}" />
+                  <div class="hero-overlay"></div>
+                </div>
+                <div class="hero-rank ${rankClass}">${rank}</div>
+                <div class="hero-badges">
+                  <span class="badge badge-genre">${game.genre}</span>
+                  <span class="badge badge-live">
+                    <span class="badge-dot"></span>Live Event
+                  </span>
+                </div>
+                <div class="hero-info">
+                  <div class="hero-meta">
+                    <h2 class="hero-title">${game.name}</h2>
+                    <div class="hero-stats">
+                      <span class="star-rating"><i class="fa-solid fa-star"></i> ${game.rating || "4.0/5"}</span>
+                      <span class="stat-icon"><i class="fa-regular fa-comment"></i></span>
+                      <span class="stat-icon"><i class="fa-solid fa-gamepad"></i></span>
+                    </div>
+                  </div>
+                  ${buildButtonHtml("Detail", game, "btn-play")}
+                </div>
+              </div>
+            `;
+          })
+          .join("");
+
+        heroGrid.querySelectorAll(".hero-card").forEach((card) => {
+          card.addEventListener("click", (event) => {
+            if (event.target.closest("button")) return;
+            const slug = card.dataset.slug;
+            const target = getSortedGames(currentMode).find((game) => (game.slug || game.name) === slug);
+            if (target) window.location.href = resolveDetailUrl(target);
+          });
+        });
+
+        heroGrid.querySelectorAll(".btn-play").forEach((button) => {
+          button.addEventListener("click", (event) => {
+            event.stopPropagation();
+            const slug = button.dataset.slug;
+            const target = getSortedGames(currentMode).find((game) => (game.slug || game.name) === slug);
+            if (target) window.location.href = resolveDetailUrl(target);
+          });
+        });
+      }
+
+      function buildButtonHtml(label, game, className) {
+        return `<button class="${className}" type="button" data-slug="${game.slug || game.name}">${label}</button>`;
+      }
+
+      function renderSmallCards(games) {
+        if (!smallGrid) return;
+
+        smallGrid.innerHTML = games
+          .map((game, index) => {
+            const cover = window.resolveGameCoverPath ? window.resolveGameCoverPath(game.cover) : game.cover;
+            const rank = String(index + 3).padStart(2, "0");
+
+            return `
+              <div class="small-card" data-slug="${game.slug || game.name}">
+                <div class="small-thumb">
+                  <img src="${cover}" alt="${game.name}" />
+                  <span class="small-rank">${rank}</span>
+                  <span class="small-rating"><i class="fa-solid fa-star"></i> ${game.rating || "4.0/5"}</span>
+                </div>
+                <div class="small-body">
+                  <h3 class="small-title">${game.name}</h3>
+                  <div class="small-footer">
+                    <div class="small-icons">
+                      <i class="fa-solid fa-gamepad"></i>
+                    </div>
+                    ${buildButtonHtml("Detail", game, "btn-view")}
+                  </div>
+                </div>
+              </div>
+            `;
+          })
+          .join("");
+
+        smallGrid.querySelectorAll(".small-card").forEach((card) => {
+          card.addEventListener("click", (event) => {
+            if (event.target.closest("button")) return;
+            const slug = card.dataset.slug;
+            const target = getSortedGames(currentMode).find((game) => (game.slug || game.name) === slug);
+            if (target) window.location.href = resolveDetailUrl(target);
+          });
+        });
+
+        smallGrid.querySelectorAll("button.btn-view").forEach((button) => {
+          button.addEventListener("click", (event) => {
+            event.stopPropagation();
+            const slug = button.dataset.slug;
+            const target = getSortedGames(currentMode).find((game) => (game.slug || game.name) === slug);
+            if (target) window.location.href = resolveDetailUrl(target);
+          });
+        });
+      }
+
+      function renderChallengers(games) {
+        if (!challengerList) return;
+
+        const visibleGames = showAllChallengers ? games.slice(5) : games.slice(5, 10);
+
+        challengerList.innerHTML = visibleGames
+          .map((game, index) => {
+            const realIndex = 5 + index;
+            const metric = currentMode === "daily" ? game.peakPlayNow : currentMode === "weekly" ? game.peakPlayWeek : game.peakPlayers;
+            const cover = window.resolveGameCoverPath ? window.resolveGameCoverPath(game.cover) : game.cover;
+            return `
+              <div class="challenger-row" data-slug="${game.slug || game.name}">
+                <span class="ch-num">${String(realIndex + 1).padStart(2, "0")}</span>
+                <img class="ch-thumb" src="${cover}" alt="${game.name}" />
+                <div class="ch-info">
+                  <p class="ch-name">${game.name}</p>
+                  <p class="ch-sub">${game.genre} · <span>${metric}</span></p>
+                </div>
+                <div class="ch-right">
+                  <span class="ch-rating"><i class="fa-solid fa-star"></i> ${game.rating || "4.0/5"}</span>
+                </div>
+              </div>
+            `;
+          })
+          .join("");
+
+        challengerList.querySelectorAll(".challenger-row").forEach((row) => {
+          row.addEventListener("click", () => {
+            const slug = row.dataset.slug;
+            const target = getSortedGames(currentMode).find((game) => (game.slug || game.name) === slug);
+            if (target) window.location.href = resolveDetailUrl(target);
+          });
+        });
+      }
+
+      let currentMode = "daily";
+
+      function renderTrending() {
+        const sortedGames = getSortedGames(currentMode);
+        const topGames = sortedGames.slice(0, 6);
+
+        renderHeroCards(topGames.slice(0, 2));
+        renderSmallCards(topGames.slice(2, 6));
+        renderChallengers(sortedGames);
+
+        if (toggleBtn) {
+          const totalChallengers = Math.max(0, sortedGames.length - 5);
+
+          if (totalChallengers <= 5) {
+            toggleBtn.textContent = "No More Challengers";
+            toggleBtn.disabled = true;
+            toggleBtn.style.opacity = "0.6";
+            toggleBtn.style.cursor = "default";
+            return;
+          }
+
+          toggleBtn.textContent = showAllChallengers ? "Close" : "See All Challengers →";
+          toggleBtn.disabled = false;
+          toggleBtn.style.opacity = "1";
+          toggleBtn.style.cursor = "pointer";
+        }
+      }
+
       document.querySelectorAll(".time-tab").forEach((tab) => {
         tab.addEventListener("click", () => {
-          document
-            .querySelectorAll(".time-tab")
-            .forEach((t) => t.classList.remove("active"));
+          document.querySelectorAll(".time-tab").forEach((t) => t.classList.remove("active"));
           tab.classList.add("active");
+          currentMode = tab.dataset.tab || "daily";
+          showAllChallengers = false;
+          renderTrending();
         });
       });
+
+      if (toggleBtn) {
+        toggleBtn.addEventListener("click", () => {
+          const totalChallengers = Math.max(0, getSortedGames(currentMode).length - 5);
+          if (totalChallengers <= 5) return;
+          showAllChallengers = !showAllChallengers;
+          renderTrending();
+        });
+      }
+
+      renderTrending();
     </script>
   </body>
 </html>
